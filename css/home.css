@@ -19,9 +19,8 @@
 }
 
 #welcome .text h1 {
-  padding: 30px 40px;
-  color: #f2ebeb;
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
+  padding: 0px 0px;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
 }
 
 #welcome #images {
@@ -42,7 +41,7 @@
 }
 
 #welcome #images #l0 {
-  background-image: url("../img/lander2.jpg");
+  background-image: url("../img/lander0.jpg");
   background-attachment: fixed;
   background-position: 50% 0%;
   opacity: 1;
