@@ -1,0 +1,27 @@
+@import 'master';
+#title {
+    font-size: 4em;
+    font-weight: 400;
+    padding: 200px 0 100px 0;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    h2 {
+        font-size: 1.5em;
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        line-height: 1.5;
+    }
+    iframe {
+        margin-top: 40px;
+        width: 100%;
+        height: 700px;
+        box-sizing: border-box;
+        border: 4px solid $accent;
+    }
+}

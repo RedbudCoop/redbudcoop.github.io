@@ -1,0 +1,215 @@
+#title {
+  font-size: 4em;
+  font-weight: 400;
+  padding: 200px 0 100px 0;
+}
+
+iframe {
+  height: 450px;
+  margin: 0 -10vw;
+  width: 100vw;
+  border: none;
+}
+
+.section {
+  margin: 100px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  grid-column-gap: 60px;
+  width: 100%;
+}
+
+.section h2 {
+  font-size: 2.5em;
+}
+
+.section h2 p {
+  font-size: .5em;
+  padding-top: 30px;
+}
+
+.section h2 img {
+  padding-top: 60px;
+  width: 100%;
+}
+
+.section .text {
+  font-size: 1em;
+  line-height: 1.25;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.section .text h4 {
+  font-size: 1.5em;
+  padding-bottom: 20px;
+}
+
+.section .text p {
+  font-size: 1em;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+
+.section .text p b {
+  font-weight: 700;
+}
+
+.section .text p a {
+  border-bottom: 2px solid #241e1e;
+}
+
+.section .text ul {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.section .text ul li {
+  line-height: 1.5;
+}
+
+.section .text .pics {
+  width: 100%;
+  padding-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 60px;
+}
+
+.section .text .pics img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+#top {
+  margin: 0 0 100px 0;
+}
+
+#top p {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+.events {
+  margin: 100px 0;
+}
+
+.events h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.events .text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.events .text .event {
+  padding: 40px;
+  width: 100%;
+  max-width: 200px;
+  border: 2px solid #241e1e;
+  margin: 0 20px 20px 0;
+}
+
+.events .text .event .title {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.bottom {
+  margin: 100px 0;
+}
+
+.bottom p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.bottom p a {
+  border-bottom: 2px solid #241e1e;
+}
+
+@media screen and (max-width: 1300px) {
+  iframe {
+    margin: 0 -5vw;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  iframe {
+    margin: 0 -50px;
+  }
+  .section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .section h2 {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .section h2 p {
+    font-size: .333em;
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  iframe {
+    margin: 0 -30px;
+  }
+  .section, .events {
+    margin: 60px 0;
+  }
+  .section h2, .events h2 {
+    font-size: 2.25em;
+  }
+  .section p, .events p {
+    font-size: .9em;
+  }
+  #top {
+    margin: 0 0 60px 0;
+  }
+  #top p {
+    font-size: 1em;
+  }
+  .bottom {
+    margin: 60px 0;
+  }
+  .bottom p {
+    font-size: 1.25em;
+  }
+}
+/*# sourceMappingURL=mosey.css.map */

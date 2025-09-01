@@ -1,0 +1,41 @@
+#title {
+  font-size: 4em;
+  font-weight: 400;
+  padding: 200px 0 60px 0;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section p {
+  font-size: 1em;
+  line-height: 2;
+  margin-bottom: 40px;
+  max-width: 1000px;
+}
+
+section iframe {
+  width: 100%;
+  border: 4px solid #241e1e;
+  height: 600px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section a {
+  margin: 80px 0;
+}
+/*# sourceMappingURL=saveplate.css.map */

@@ -1,0 +1,55 @@
+@import 'master';
+#title {
+    font-size: 4em;
+    font-weight: 400;
+    padding: 200px 0 100px 0;
+}
+#photos {
+    width: 100%;
+    margin: 0;
+    line-height: 0;
+    display: inline-block;
+    column-count: 4;
+    column-gap: 16px;
+    img {
+        margin-bottom: 16px;
+        vertical-align: middle;
+        width: 100% !important;
+        height: auto !important;
+        background: $accent;
+    }
+}
+@media screen and (max-width: 1450px) {
+    #photos {
+        column-count: 3;
+    }
+}
+@media screen and (max-width: 1050px) {
+    #photos {
+        column-count: 2;
+    }
+}
+@media screen and (max-width: 700px) {
+    #photos {
+        column-count: 1;
+    }
+}
+@media screen and (max-width: 900px) {
+}
+#loading {
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 100vh;
+    width: 100vw;
+    background: $base;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: top;
+    transition-duration: 1s;
+    pointer-events: none;
+    p {
+        font-size: 2em;
+    }
+}
