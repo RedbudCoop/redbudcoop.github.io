@@ -12,25 +12,13 @@
     <link rel="icon" href="img/ui/icon.svg">
 </head>
 <body>
-    <div id="header">
-        <a href="index.html" id="logo"><img src="img/ui/vc_thumbnail_2.svg" alt=""><i>Redbud Cooperative</i></a>
-        <input type="checkbox" id="checkbox" class="checkbox">
-        <label for="checkbox" class="menu-icon"><img src="img/ui/menu.svg" alt=""></label>
-        <div id="links">
-            <a class="link" href="index.html">Home</a>
-            <a class="link" href="about.html">About</a>
-            <a class="link" href="mosey.html">Mosey</a>
-            <a class="link" href="gallery.html">Gallery</a>
-            <a class="link" href="saveplate.html">Save Plate</a>
-            <a class="link" href="https://forms.gle/RZyxtjqJWHnuoBUFA" target="_blank">Officer Feedback</a>
-            <a class="link" href="contact.html">Contact</a>
-        </div>
-    </div>
-    <div id="home"></div>
+    <div class="header-placeholder"></div>
     <div id="pageWrap">
         <h1 id="title">Gallery</h1>
+        <p>Photos will be added soon</p>
+        <!--Figure put a nicer way to easily display photos-->
         <section id="photos">
-            <img id="1" alt="">
+            <!-- <img id="1" alt="">
             <img id="2" alt="">
             <img id="3" alt="">
             <img id="4" alt="">
@@ -135,7 +123,7 @@
             <img id="101" alt="">
             <img id="102" alt="">
             <img id="103" alt="">
-            <img id="104" alt="">
+            <img id="104" alt=""> -->
             <script>
                 var i = 1;
                 for (var i = 1; i <= 104; i++) {
@@ -147,20 +135,13 @@
             </script>
         </section>
     </div>
-    <footer>
-        <div class="info">
-            <p>Copyright © Von Cramm 2019</p>
-        </div>
-        <div class="social">
-            <a href="https://www.facebook.com/pages/Von-Cramm-Hall/159855270701191" target="none">Facebook</a>
-            <a href="https://www.instagram.com/crammies4lyfe" target="none">Instagram</a>
-        </div>
-    </footer>
+    <div class="footer-placeholder"></div>
     <div id="loading">
         <p>Loading Images</p>
     </div>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/template-loader.js"></script>
     <script language="javascript" type="text/javascript">
         $(window).load(function() {
             $('#loading').css("opacity", "0");

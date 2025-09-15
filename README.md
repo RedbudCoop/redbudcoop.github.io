@@ -2,6 +2,6 @@
 Official website of Redbud Cooperative at Cornell University in Ithaca, NY
 
 TODO
-- [] Edit contact
+- [x] Edit contact
 - [] Edit mosey
-- [] Edit Gallery
+- [x] Edit Gallery
