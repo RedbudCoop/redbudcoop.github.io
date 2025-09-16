@@ -70,4 +70,61 @@
 #loading p {
   font-size: 2em;
 }
+
+/* Add these styles to your existing css/gallery.css */
+
+#upload-instructions {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+#upload-instructions a {
+    color: #241e1e;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#upload-instructions a:hover {
+    text-decoration: none;
+}
+
+#photos img {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#photos img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Loading animation for individual images */
+#photos img {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Error message styling */
+#photos p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+    grid-column: 1 / -1;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 450px) {
+    #upload-instructions {
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+}
 /*# sourceMappingURL=gallery.css.map */

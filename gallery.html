@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gallery | Von Cramm Cooperative Hall</title>
+    <title>Gallery | Redbud Cooperative</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="https://use.typekit.net/ewm2fmn.css">
@@ -15,137 +15,25 @@
     <div class="header-placeholder"></div>
     <div id="pageWrap">
         <h1 id="title">Gallery</h1>
-        <p>Photos will be added soon</p>
-        <!--Figure put a nicer way to easily display photos-->
+        <p id="upload-instructions">
+            House members can upload photos to our 
+            <a href="https://drive.google.com/drive/folders/16TJysWpDR3fYk-8LMLYcvz5T7vwhlJEp" target="_blank">
+                shared Google Drive folder
+            </a> 
+            and they will automatically appear here!
+        </p>
         <section id="photos">
-            <!-- <img id="1" alt="">
-            <img id="2" alt="">
-            <img id="3" alt="">
-            <img id="4" alt="">
-            <img id="5" alt="">
-            <img id="6" alt="">
-            <img id="7" alt="">
-            <img id="8" alt="">
-            <img id="9" alt="">
-            <img id="10" alt="">
-            <img id="11" alt="">
-            <img id="12" alt="">
-            <img id="13" alt="">
-            <img id="14" alt="">
-            <img id="15" alt="">
-            <img id="16" alt="">
-            <img id="17" alt="">
-            <img id="18" alt="">
-            <img id="19" alt="">
-            <img id="20" alt="">
-            <img id="21" alt="">
-            <img id="22" alt="">
-            <img id="23" alt="">
-            <img id="24" alt="">
-            <img id="25" alt="">
-            <img id="26" alt="">
-            <img id="27" alt="">
-            <img id="28" alt="">
-            <img id="29" alt="">
-            <img id="30" alt="">
-            <img id="31" alt="">
-            <img id="32" alt="">
-            <img id="33" alt="">
-            <img id="34" alt="">
-            <img id="35" alt="">
-            <img id="36" alt="">
-            <img id="37" alt="">
-            <img id="38" alt="">
-            <img id="39" alt="">
-            <img id="40" alt="">
-            <img id="41" alt="">
-            <img id="42" alt="">
-            <img id="43" alt="">
-            <img id="44" alt="">
-            <img id="45" alt="">
-            <img id="46" alt="">
-            <img id="47" alt="">
-            <img id="48" alt="">
-            <img id="49" alt="">
-            <img id="50" alt="">
-            <img id="51" alt="">
-            <img id="52" alt="">
-            <img id="53" alt="">
-            <img id="54" alt="">
-            <img id="55" alt="">
-            <img id="56" alt="">
-            <img id="57" alt="">
-            <img id="58" alt="">
-            <img id="59" alt="">
-            <img id="60" alt="">
-            <img id="61" alt="">
-            <img id="62" alt="">
-            <img id="63" alt="">
-            <img id="64" alt="">
-            <img id="65" alt="">
-            <img id="66" alt="">
-            <img id="67" alt="">
-            <img id="68" alt="">
-            <img id="69" alt="">
-            <img id="70" alt="">
-            <img id="71" alt="">
-            <img id="72" alt="">
-            <img id="73" alt="">
-            <img id="74" alt="">
-            <img id="75" alt="">
-            <img id="75" alt="">
-            <img id="76" alt="">
-            <img id="77" alt="">
-            <img id="78" alt="">
-            <img id="79" alt="">
-            <img id="80" alt="">
-            <img id="81" alt="">
-            <img id="82" alt="">
-            <img id="83" alt="">
-            <img id="84" alt="">
-            <img id="85" alt="">
-            <img id="86" alt="">
-            <img id="87" alt="">
-            <img id="88" alt="">
-            <img id="89" alt="">
-            <img id="90" alt="">
-            <img id="91" alt="">
-            <img id="92" alt="">
-            <img id="93" alt="">
-            <img id="94" alt="">
-            <img id="95" alt="">
-            <img id="95" alt="">
-            <img id="96" alt="">
-            <img id="97" alt="">
-            <img id="98" alt="">
-            <img id="99" alt="">
-            <img id="100" alt="">
-            <img id="101" alt="">
-            <img id="102" alt="">
-            <img id="103" alt="">
-            <img id="104" alt=""> -->
-            <script>
-                var i = 1;
-                for (var i = 1; i <= 104; i++) {
-                    document.getElementById(i).src = "img/gallery/vc-" + ("0" + i).slice(-3) + ".jpg";
-                }
-                function rand(a) {
-
-                }
-            </script>
+            <!-- Photos will be loaded dynamically -->
         </section>
     </div>
     <div class="footer-placeholder"></div>
     <div id="loading">
         <p>Loading Images</p>
     </div>
+    
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="js/script.js"></script>
     <script src="js/template-loader.js"></script>
-    <script language="javascript" type="text/javascript">
-        $(window).load(function() {
-            $('#loading').css("opacity", "0");
-        });
-   </script>
+    <script src="js/gallery-drive.js"></script>
 </body>
 </html>
