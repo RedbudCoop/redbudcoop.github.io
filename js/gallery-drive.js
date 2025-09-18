@@ -3,7 +3,7 @@
 class GoogleDriveGallery {
     constructor() {
         // Replace with your actual API key and folder ID
-        this.API_KEY = 'AIzaSyBI5VCn91GN8P5MLcfHa46htbUvXsjlDgA';
+        this.API_KEY = 'AIzaSyBI5VCn91GN8P5MLcfHa46htbUvXsjlDgA'; // restricted key
         this.FOLDER_ID = '16TJysWpDR3fYk-8LMLYcvz5T7vwhlJEp';
         this.photosContainer = document.getElementById('photos');
         this.loadingDiv = document.getElementById('loading');
