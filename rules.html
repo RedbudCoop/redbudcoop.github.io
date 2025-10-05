@@ -34,6 +34,7 @@
                 <ul>
                     <li>[1] Passed 09/11/2022. Updated all references to the cooperative and building in the constitution.</li>
                 </ul>
+                <button class="toggle-all-button" id="toggle-all">Open All</button>
                 <button class="rules-buttons" id='i-rationale' title="Rationale for the constitution details">I. Rationale</button>
                 <div id = "i-rationale-info" class = "accessible-hidden">
                     <p>The House Rules are a record of policies and practices evolved since Redbud was founded in 1956. They represent the accumulated wisdom of generations of house members<sup>1</sup> in their efforts to run a successful house.
@@ -620,16 +621,44 @@
     <script src="js/template-loader.js"></script>
     <script>
         $(document).ready(function() {
+            // Individual section toggle
             $('.rules-buttons').click(function() {
                 var targetId = $(this).attr('id') + '-info';
                 var targetDiv = $('#' + targetId);
-                
+
                 if (targetDiv.hasClass('accessible-hidden')) {
                     targetDiv.removeClass('accessible-hidden');
                     $(this).attr('aria-expanded', 'true');
                 } else {
                     targetDiv.addClass('accessible-hidden');
                     $(this).attr('aria-expanded', 'false');
+                }
+            });
+
+            // Toggle all sections
+            $('#toggle-all').click(function() {
+                var allSections = $('.rules-buttons').map(function() {
+                    return $('#' + $(this).attr('id') + '-info');
+                }).get();
+
+                var allHidden = allSections.every(function(section) {
+                    return $(section).hasClass('accessible-hidden');
+                });
+
+                if (allHidden) {
+                    // Open all
+                    allSections.forEach(function(section) {
+                        $(section).removeClass('accessible-hidden');
+                    });
+                    $('.rules-buttons').attr('aria-expanded', 'true');
+                    $(this).text('Collapse All');
+                } else {
+                    // Close all
+                    allSections.forEach(function(section) {
+                        $(section).addClass('accessible-hidden');
+                    });
+                    $('.rules-buttons').attr('aria-expanded', 'false');
+                    $(this).text('Open All');
                 }
             });
         });

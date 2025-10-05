@@ -220,4 +220,86 @@
     font-size: .9em;
   }
 }
+
+.accessible-hidden {
+  display: none;
+}
+
+.toggle-all-button {
+  padding: 15px 30px;
+  background: #8B4513;
+  color: #f2ebeb;
+  margin: 20px 0;
+  border: 2px solid #241e1e;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.toggle-all-button:hover {
+  background: #A0522D;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.rules-buttons {
+  padding: 10px 20px;
+  background: #241e1e;
+  color: #f2ebeb;
+  margin: 10px 0;
+  border: none;
+  font-size: 1.1em;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.rules-buttons:hover {
+  filter: saturate(2);
+}
+
+/* Spacing for rules content sections */
+.rules-buttons + div {
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.rules-buttons + div p {
+  margin-bottom: 15px;
+}
+
+.rules-buttons + div h4 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.rules-buttons + div h5 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.rules-buttons + div ul,
+.rules-buttons + div ol {
+  margin-bottom: 15px;
+  padding-left: 40px;
+}
+
+.rules-buttons + div ul li,
+.rules-buttons + div ol li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.rules-buttons + div img {
+  max-width: 100%;
+  height: auto;
+  margin: 15px 0;
+}
 /*# sourceMappingURL=about.css.map */
